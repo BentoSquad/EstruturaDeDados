@@ -6,6 +6,8 @@ A arquitetura **Pipe & Filter** é amplamente utilizada no desenvolvimento de si
 
 > **Exemplo:** Pense em uma linha de produção em uma fábrica, onde cada estação realiza uma transformação específica em um item, e esse item é passado de uma estação para outra até estar finalizado.
 
+![Linha de Produção](imagens/como-funciona-linha-producao.jpg)
+
 ---
 
 ## 2. Teoria e Explicação da Arquitetura 🧠
@@ -34,6 +36,8 @@ Os principais objetivos da **Arquitetura Pipe & Filter** incluem:
 
 > 🔍 **Exemplo:** Em uma aplicação de processamento de imagens, podemos ter um filtro para redimensionar a imagem, outro para aplicar um filtro de cor e outro para comprimir a imagem. A ordem desses filtros pode ser alterada dependendo da necessidade.
 
+![Organização Pipe & Filters](imagens/pipes-and-filters-solution.png)
+
 ---
 
 ## 4. Aplicabilidade e Limitações 📊
@@ -54,6 +58,8 @@ Pode não ser a escolha ideal em sistemas que:
 - Têm forte dependência entre as etapas do processamento, onde a ordem de execução não pode ser facilmente alterada.
 
 > **Exemplo:** Se um sistema precisa que o resultado de um filtro influencie um processamento anterior, a arquitetura Pipe & Filter pode não ser adequada, pois os pipes normalmente seguem uma comunicação "só de ida".
+
+![Etl](imagens/etl.png)
 
 ---
 

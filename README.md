@@ -2,7 +2,7 @@
 
 ## 1. Introdução à Arquitetura Pipe & Filter 🚀
 
-A arquitetura **Pipe & Filter** é amplamente utilizada no desenvolvimento de sistemas, principalmente quando há necessidade de processar fluxos de dados de forma sequencial. O conceito básico envolve a divisão do processamento em etapas, cada uma representada por um "filtro", e os dados fluem entre essas etapas através de "pipes" (tubulações).
+A arquitetura **Pipe & Filter** ou **Arquitetura de pipeline de dados** é amplamente utilizada no desenvolvimento de sistemas, principalmente quando há necessidade de processar dados em etapas. O conceito básico envolve a divisão do processamento em etapas, cada uma representada por um "filtro" que seriam os componentes, e os dados fluem entre essas etapas através de "pipes" (tubulações/canais de comunicação).
 
 > **Exemplo:** Pense em uma linha de produção em uma fábrica, onde cada estação realiza uma transformação específica em um item, e esse item é passado de uma estação para outra até estar finalizado.
 
@@ -19,9 +19,14 @@ A **Arquitetura Pipe & Filter** é composta por dois elementos principais:
 
 Esta arquitetura oferece uma abordagem modular, onde cada filtro pode ser substituído ou modificado sem afetar o resto do sistema. Isso facilita a manutenção e escalabilidade.
 
-![Diagrama Pipe & Filter](imagens/pipe_and_filter_3.jpg)
+![Diagrama Pipe & Filter](imagens/PipeAndFilterSimplificado.png)
 
-> **Nota:** Um exemplo clássico de Pipe & Filter é encontrado nos sistemas Unix, onde comandos são encadeados com pipes (`|`), permitindo que a saída de um comando seja usada como entrada do próximo.
+> **Nota:** Uma analogia interessante seria um sistema hidráulico responsável por fazer o tratamento de água imprópria para consumo. Internamente, a água é tratada sendo deslocada por meio de dutos e processada em “filtros” específicos, cada um com uma função singular determinada, como, por exemplo, remover impurezas, regular acidez, adicionar cloro e ajustar a temperatura.
+
+![Tratamento de água](imagens/tratamentoAgua.jpg)
+
+
+Em sistemas implementados utilizando a arquitetura pipes and filters, a “água” é substituída por dados, os dutos são substituídos por algum mecanismo de comunicação e, finalmente, os filtros, são substituídos por unidades computacionais.
 
 ---
 

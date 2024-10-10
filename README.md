@@ -35,7 +35,7 @@ Em sistemas implementados utilizando a arquitetura pipes and filters, a “água
 Os principais objetivos da **Arquitetura Pipe & Filter** incluem:
 
 - **Modularidade:** Permitir que partes do sistema sejam desenvolvidas e mantidas de forma independente.
-- **Reuso de Componentes:** Facilitar o reaproveitamento de filtros em diferentes sistemas ou cenários.
+- **Reusabilidade dos Componentes** Uma vez que um filtro foi desenvolvido para realizar uma transformação específica, ele pode ser reutilizado em outros pipelines de processamento sem a necessidade de reimplementação.
 - **Facilidade de Teste:** Cada filtro pode ser testado de forma isolada.
 - **Composição Flexível:** Filtros podem ser facilmente reorganizados ou combinados para formar novos fluxos de processamento.
 
